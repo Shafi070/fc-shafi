@@ -13,7 +13,7 @@ h1{
     font-weight: 700;
     font-size: 64px;
 }
-#container-1{
+.container-1{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,6 +47,7 @@ button{
     padding-bottom: 10px;
     padding-left: 24px;
     padding-right: 24px;
+    border: 0;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -107,5 +108,36 @@ button:hover{
 /* media queries */
 /* mobile devices */
 @media only screen and (max-width:688px) {
-   
+   .container-1{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       height: 695px;
+   }
+   .banner-items{
+    position: absolute;
+    color: white;
+    width: 278px;
+    height: 138px;
+    padding-left: 16px;
+    padding-right: 66px;
+    padding-top: 112px;
+    padding-bottom: 445px;
+}
+    .banner-items img{
+        position: absolute;
+        width: 329px;
+        height: 259px;
+    }
+   .players{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 27px;
+}
+.footer-logo img{
+    flex: none;
+    flex-grow: 0;
+    width: 200px;
+    height: auto;
+}
 }
